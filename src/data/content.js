@@ -1,0 +1,588 @@
+// ---------------------------------------------------------------------------
+// Central content file. Edit this file to update site copy, links and data.
+// Replace PLACEHOLDER values (marked below) with your real details.
+// ---------------------------------------------------------------------------
+
+export const personal = {
+  name: 'Swapnil Gavit',
+  titles: ['Full Stack Java Developer', 'DevOps Engineer', 'Linux Enthusiast'],
+  typingRoles: [
+    'Full Stack Java Developer',
+    'Java Developer',
+    'Spring Boot Developer',
+    'React Developer',
+    'Linux Engineer',
+    'DevOps Engineer',
+    'Production Support Engineer',
+  ],
+  philosophy:
+    'Building scalable software while exploring the world — one deployment and one destination at a time.',
+  location: 'Mumbai, Maharashtra, India', 
+  email: 'swapnilgavit19@gmail.com',
+  phone: '+91 81779 31221',
+  resumeUrl: '/resume-swapnil-gavit.pdf',
+}
+
+export const socials = {
+  email: 'mailto:swapnilgavit19@gmail.com',
+  linkedin: 'https://www.linkedin.com/in/swapnil-gavit', // https://www.linkedin.com/in/swapnil-gavit
+  github: 'https://github.com/SwapnilGavit', // https://github.com/SwapnilGavit
+  twitter: 'https://x.com/swapnilgavit30', // https://x.com/swapnilgavit30
+  instagram: 'https://instagram.com/swapnil___gavit', // https://www.instagram.com/swapnil___gavit/
+}
+
+export const githubUsername = 'SwapnilGavit' // PLACEHOLDER — used by GitHub contributions widget
+
+export const about = {
+  intro:
+    'I am a Full-Stack Java Developer with DevOps expertise and 3+ years of experience building enterprise-grade applications.',
+  body: [
+    'Experienced across the complete SDLC including requirement analysis, impact analysis, development, deployment, CI/CD and production support.',
+    'Strong expertise in Java, Spring Boot, React.js, Oracle SQL, Linux, Apache Tomcat, Apache HTTP Server, Jenkins, JFrog, Shell Scripting, SSL implementation and production support.',
+    'I enjoy owning problems end to end — from writing the code, to deploying it on Linux servers, to keeping it healthy in production. Outside of engineering, I am usually planning my next trip or going through the photos from the last one.',
+  ],
+  highlights: [
+    { label: 'Years of Experience', value: '4+' },
+    { label: 'Production Systems Migrated', value: '3' },
+    { label: 'Core Stack', value: 'Java · Spring · React' },
+    { label: 'Based in', value: 'India' },
+  ],
+}
+
+export const skillCategories = [
+  {
+    title: 'Programming Languages',
+    icon: 'code',
+    skills: ['Java', 'JavaScript', 'Python', 'SQL', 'PL/SQL'],
+  },
+  {
+    title: 'Frameworks & Libraries',
+    icon: 'layers',
+    skills: ['Spring', 'Spring Boot', 'JSP/Servlet', 'React.js', 'JUnit'],
+  },
+  {
+    title: 'Databases',
+    icon: 'database',
+    skills: ['Oracle', 'MySQL'],
+  },
+  {
+    title: 'DevOps & Tooling',
+    icon: 'devops',
+    skills: ['Git', 'GitHub', 'Jenkins', 'JFrog Artifactory', 'CI/CD', 'Shell Scripting'],
+  },
+  {
+    title: 'Servers & OS',
+    icon: 'server',
+    skills: ['Apache Tomcat', 'Apache HTTP Server', 'Linux'],
+  },
+]
+
+export const experience = [
+  {
+    company: 'Excellex Technologies Pvt Ltd',
+    position: 'Full Stack Java Developer',
+    duration: 'June 2022 — Present',
+    points: [
+      'Own features end-to-end across the SDLC: requirement analysis, impact analysis, development, testing, deployment and production support.',
+      'Administer and harden Linux servers hosting production applications.',
+      'Build and maintain CI/CD pipelines for automated, repeatable deployments.',
+      'Write and optimize Oracle SQL for application data layers.',
+      'Configure and tune application and web servers for performance and reliability.',
+    ],
+    tags: ['Java', 'Spring Boot', 'React.js', 'Oracle SQL', 'Linux', 'CI/CD', 'Production Support'],
+  },
+]
+
+export const projects = [
+  {
+    id: 'cbrics',
+    name: 'CBRICS',
+    fullName: 'Corporate Bond Reporting & Integrated Clearing System',
+    summary:
+      'Enterprise reporting and clearing platform for corporate bonds, covering the full software development lifecycle from analysis to production support.',
+    tags: ['Java', 'Spring Boot', 'Oracle SQL', 'Linux', 'Apache Tomcat', 'Jenkins', 'CI/CD'],
+    category: ['Full Stack', 'DevOps'],
+    highlights: [
+      'Full SDLC ownership — requirement analysis through production support',
+      'Windows to Linux server migration',
+      'Apache Tomcat setup and tuning',
+      'Apache HTTP Server configuration',
+      'Database migration from MSSQL to Oracle',
+      'Jenkins CI/CD pipeline and JFrog artifact management',
+      'SSL implementation and HTTPS migration',
+    ],
+  },
+  {
+    id: 'ebp',
+    name: 'EBP',
+    fullName: 'Electronic Bidding Platform',
+    summary:
+      'Electronic platform enabling secure, auditable bidding workflows, built and deployed with a strong focus on reliability and production stability.',
+    tags: ['Java', 'Spring', 'React.js', 'Oracle SQL', 'Shell Scripting'],
+    category: ['Full Stack', 'DevOps'],
+    highlights: [
+      'Requirement and impact analysis for bidding workflows',
+      'Shell scripting for deployment automation',
+      'Git-based version control and release management',
+      'Production issue troubleshooting and resolution',
+    ],
+  },
+  {
+    id: 'clinic-management-system',
+    name: 'Clinic Management System',
+    fullName: 'Clinic Management System',
+    summary:
+      'End-to-end healthcare management application for patient records, appointments and clinic operations.',
+    tags: ['Java', 'Spring Boot', 'JSP/Servlet', 'MySQL', 'React.js'],
+    category: ['Full Stack'],
+    highlights: [
+      'Designed core modules for patient and appointment management',
+      'Built REST APIs with Spring Boot',
+      'Implemented a responsive front end with React.js',
+    ],
+  },{
+  id: 'r26-resort',
+  name: 'R26 Resort',
+  fullName: 'R26 Resort & Restaurant Static Web Application',
+  summary:
+    'Modern web application for R26 Resort & Restaurant, designed to showcase resort facilities, restaurant services, accommodation, and provide an engaging digital experience for visitors.',
+  tags: [
+    'React.js',
+    'JavaScript',
+    'HTML',
+    'CSS',
+    'Responsive Design',
+    'REST API',
+  ],
+  category: ['Full Stack', 'Web Development'],
+  url: 'https://google.com', //C:/Users/swapn/Desktop/Project R26/files3/R26-Restaurant-Website/R26-Restaurant-Website/index.html
+  highlights: [
+    'Designed and developed the complete resort and restaurant web application',
+    'Responsive and mobile-friendly user interface',
+    'Resort information, facilities, and accommodation sections',
+    'Restaurant and food service showcase',
+    'Interactive navigation and user-friendly page layouts',
+    'Reusable React components for maintainable UI development',
+    'Modern and visually appealing design focused on user experience',
+  ],
+},  
+]
+
+export const devops = [
+  {
+    title: 'Linux Administration',
+    description: 'Day-to-day administration, hardening and troubleshooting of production Linux servers.',
+    icon: 'linux',
+  },
+  {
+    title: 'Apache Tomcat',
+    description: 'Installation, configuration and performance tuning of Apache Tomcat for Java application hosting.',
+    icon: 'tomcat',
+  },
+  {
+    title: 'Apache HTTP Server',
+    description: 'Reverse proxy, virtual host and load-balancing configuration with Apache HTTPD.',
+    icon: 'apache',
+  },
+  {
+    title: 'Jenkins',
+    description: 'Building and maintaining CI/CD pipelines for automated build, test and deployment.',
+    icon: 'jenkins',
+  },
+  {
+    title: 'JFrog Artifactory',
+    description: 'Artifact versioning and repository management across environments.',
+    icon: 'jfrog',
+  },
+  {
+    title: 'Git',
+    description: 'Branching strategies, code reviews and release management.',
+    icon: 'git',
+  },
+  {
+    title: 'CI/CD',
+    description: 'Designing automated pipelines that take code from commit to production safely.',
+    icon: 'cicd',
+  },
+  {
+    title: 'SSL / HTTPS',
+    description: 'Certificate implementation and migration of services from AJP to HTTPS.',
+    icon: 'ssl',
+  },
+  {
+    title: 'Shell Scripting',
+    description: 'Automating deployments, backups and routine operations with shell scripts.',
+    icon: 'shell',
+  },
+  {
+    title: 'Production Deployment',
+    description: 'Planning and executing zero-drama releases to production environments.',
+    icon: 'deploy',
+  },
+  {
+    title: 'Monitoring',
+    description: 'Keeping an eye on application and server health to catch issues early.',
+    icon: 'monitor',
+  },
+  {
+    title: 'Troubleshooting',
+    description: 'Diagnosing and resolving production issues quickly under pressure.',
+    icon: 'troubleshoot',
+  },
+]
+
+export const achievements = [
+  'Migrated application servers from Windows to Linux',
+  'Migrated web servers from Windows to Linux',
+  'Migrated database from MSSQL to Oracle',
+  'Configured Apache Tomcat for production workloads',
+  'Configured Apache HTTP Server as reverse proxy',
+  'Implemented SSL certificates across environments',
+  'Migrated AJP connections to HTTPS',
+  'Automated deployments with Jenkins and shell scripts',
+  'Created and maintained shell scripts for operations',
+  'Resolved critical production issues under pressure',
+]
+
+// ---------------------------------------------------------------------------
+// Education
+// ---------------------------------------------------------------------------
+
+export const education = [
+  {
+    id: 'pgdac',
+    institution: 'Centre for Development of Advanced Computing (CDAC)',
+    qualification: 'Post Graduate Diploma in Advanced Computing (PG-DAC)',
+    duration: 'September 2021 — April 2022',
+    grade: 'A Grade',
+    description:
+      'PG-DAC is an intensive postgraduate program focused on advanced software development and computer engineering, with hands-on learning across Java, Data Structures, Operating Systems, Web Technologies, Database Management Systems, Software Engineering, Cloud Computing, Linux, and Enterprise Application Development.',
+    skills: [
+      'Java',
+      'Data Structures & Algorithms',
+      'Spring Framework',
+      'Database Management',
+      'Web Development',
+      'Linux',
+      'Software Engineering',
+      'Object-Oriented Programming',
+    ],
+  },
+  {
+    id: 'btech',
+    institution: 'Dr. Babasaheb Ambedkar Technological University',
+    qualification: 'Bachelor of Technology (B.Tech)',
+    branch: 'Electronics & Telecommunication Engineering',
+    duration: 'July 2015 — January 2021',
+    description:
+      'Completed Bachelor of Technology with a strong engineering foundation in electronics, communication systems, networking, programming fundamentals, mathematics, and problem-solving.',
+    skills: ['Electronics', 'Communication Systems', 'Networking Fundamentals', 'Programming Fundamentals', 'Mathematics'],
+  },
+]
+
+export const academicAchievements = [
+  { label: 'PG-DAC (A Grade)', icon: 'award' },
+  { label: 'B.Tech Graduate', icon: 'graduation' },
+  { label: '4+ Years Industry Experience', icon: 'briefcase' },
+]
+
+export const certifications = [
+  {
+    title: 'PG-DAC Certificate',
+    issuer: 'Centre for Development of Advanced Computing (CDAC)',
+    date: 'April 2022',
+    available: true,
+  },
+  {
+    title: 'Future Certification',
+    issuer: 'TBD',
+    date: 'Upcoming',
+    available: false,
+  },
+  {
+    title: 'Future Certification',
+    issuer: 'TBD',
+    date: 'Upcoming',
+    available: false,
+  },
+]
+
+export const careerTimeline = [
+  { year: '2015', label: 'Started B.Tech', type: 'education' },
+  { year: '2021', label: 'Completed B.Tech', type: 'education' },
+  { year: '2021', label: 'Joined CDAC', type: 'education' },
+  { year: '2022', label: 'Completed PG-DAC (A Grade)', type: 'education' },
+  { year: '2022', label: 'Joined Excellex Technologies Pvt. Ltd.', type: 'work' },
+  { year: 'Present', label: 'Working as Full Stack Java Developer with DevOps Expertise', type: 'work' },
+]
+
+// ---------------------------------------------------------------------------
+// Travel
+// ---------------------------------------------------------------------------
+
+export const travelStats = {
+  countries: 2,
+  states: 6,
+  trips: 9,
+  kilometers: '18,500+',
+  highestAltitude: '17,586 ft (Changla Pass, Ladakh)',
+  favoriteDestination: 'Ladakh',
+}
+
+export const travelDestinations = [
+  {
+    id: 'dubai-2022',
+    place: 'Dubai',
+    country: 'UAE',
+    date: 'November 2022',
+    year: 2022,
+    coords: { x: 61, y: 49 },
+    category: ['Cities', 'Architecture'],
+    overview:
+      'A first international trip exploring the skyline, desert and the mix of ultra-modern architecture against the Arabian desert.',
+    itinerary: ['Day 1: Burj Khalifa & Downtown Dubai', 'Day 2: Desert safari & Bedouin camp', 'Day 3: Dubai Marina & Palm Jumeirah', 'Day 4: Old Dubai & Gold Souk'],
+    budget: '₹65,000 approx. (flights, stay, activities)', // PLACEHOLDER
+    route: 'Mumbai → Dubai (flight)',
+    tips: ['Book desert safari in advance', 'Best visited Oct–Mar for cooler weather', 'Metro is the easiest way to get around'],
+    photos: 4,
+  },
+  {
+    id: 'delhi-2025',
+    place: 'Delhi',
+    country: 'India',
+    date: 'August 2025',
+    year: 2025,
+    coords: { x: 66.3, y: 46.8 },
+    category: ['Cities', 'Architecture'],
+    overview: 'Exploring the capital\'s layered history — Mughal monuments, colonial architecture and modern India side by side.',
+    itinerary: ['Day 1: India Gate & Rashtrapati Bhavan', 'Day 2: Red Fort & Old Delhi', 'Day 3: Qutub Minar & Humayun\'s Tomb'],
+    budget: '₹15,000 approx.',
+    route: 'Domestic flight to Delhi',
+    tips: ['Carry water in summer', 'Metro connects most major sights'],
+    photos: 6,
+  },
+  {
+    id: 'agra-2025',
+    place: 'Agra',
+    country: 'India',
+    date: 'August 2025',
+    year: 2025,
+    coords: { x: 67.5, y: 48.3 },
+    category: ['Architecture'],
+    overview: 'A short trip built entirely around one goal: watching sunrise at the Taj Mahal.',
+    itinerary: ['Day 1: Sunrise at Taj Mahal, Agra Fort'],
+    budget: '₹8,000 approx.',
+    route: 'Delhi → Agra (road)',
+    tips: ['Reach the Taj Mahal before sunrise for the best light and fewer crowds'],
+    photos: 5,
+  },
+  {
+    id: 'kashmir-2025',
+    place: 'Kashmir',
+    country: 'India',
+    date: 'September 2025',
+    year: 2025,
+    coords: { x: 66, y: 44 },
+    category: ['Mountains', 'Nature'],
+    overview: 'Paradise on earth — Dal Lake, Gulmarg and the valleys of Kashmir in early autumn colors.',
+    itinerary: ['Day 1-2: Srinagar & Dal Lake shikara ride', 'Day 3: Gulmarg gondola', 'Day 4: Pahalgam valley'],
+    budget: '₹35,000 approx.',
+    route: 'Flight to Srinagar',
+    tips: ['Carry layers — mornings and evenings are cold', 'Houseboat stay is worth it'],
+    photos: 12,
+  },
+  {
+    id: 'ladakh-2025',
+    place: 'Ladakh',
+    country: 'India',
+    date: 'September 2025',
+    year: 2025,
+    coords: { x: 67, y: 44 },
+    category: ['Mountains', 'Adventure', 'Road Trips'],
+    overview: 'High-altitude desert landscapes, Pangong Lake, and some of the highest motorable passes in the world.',
+    itinerary: ['Day 1: Leh acclimatization', 'Day 2: Nubra Valley via Khardung La', 'Day 3: Pangong Lake', 'Day 4: Magnetic Hill & Sangam'],
+    budget: '₹40,000 approx.',
+    route: 'Flight to Leh + local road trip',
+    tips: ['Acclimatize for at least a day before gaining altitude', 'Carry cash — limited ATMs outside Leh'],
+    photos: 20,
+  },
+  {
+    id: 'spiti-2025',
+    place: 'Spiti Valley',
+    country: 'India',
+    date: 'November 2025',
+    year: 2025,
+    coords: {  x: 68, y: 46},
+    category: ['Mountains', 'Adventure', 'Road Trips'],
+    overview: 'A cold desert mountain valley in Himachal Pradesh — remote monasteries, dramatic landscapes, and winding roads.',
+    itinerary: ['Day 1-2: Shimla to Kaza road trip', 'Day 3: Key Monastery & Kibber', 'Day 4: Chandratal Lake', 'Day 5: Return via Manali'],
+    budget: '₹30,000 approx.',
+    route: 'Road trip via Shimla — Kaza — Manali',
+    tips: ['Roads can close due to snow in late season', 'Carry warm clothing even in November'],
+    photos: 18,
+  },
+  {
+    id: 'goa-2026',
+    place: 'Goa',
+    country: 'India',
+    date: 'January 2026',
+    year: 2026,
+    coords: { x: 65.5, y: 53.5 },
+    category: ['Sunsets', 'Nature'],
+    overview: 'Beaches, sunsets and a laid-back pace to start the year.',
+    itinerary: ['Day 1: North Goa beaches', 'Day 2: Old Goa churches', 'Day 3: South Goa & sunset points'],
+    budget: '₹20,000 approx.',
+    route: 'Flight to Goa',
+    tips: ['Rent a scooter to explore at your own pace', 'Sunset at Vagator/Chapora Fort is unmissable'],
+    photos: 15,
+  },
+  {
+    id: 'bhutan-2026',
+    place: 'Bhutan',
+    country: 'Bhutan',
+    date: 'April 2026',
+    year: 2026,
+    coords: { x: 69.8, y: 47 },
+    category: ['Mountains', 'Nature', 'Adventure'],
+    overview: 'The Land of the Thunder Dragon — Tiger\'s Nest Monastery, pristine valleys, and a carbon-negative country.',
+    itinerary: ['Day 1: Paro arrival', 'Day 2: Tiger\'s Nest Monastery trek', 'Day 3: Thimphu sightseeing', 'Day 4: Punakha Dzong'],
+    budget: '₹90,000 approx. (incl. permits)',
+    route: 'Flight to Paro',
+    tips: ['Sustainable Development Fee applies for international travelers', 'Tiger\'s Nest trek is steep — start early'],
+    photos: 22,
+  },
+  {
+    id: 'zanskar-2026',
+    place: 'Zanskar Valley',
+    country: 'India',
+    date: 'June 2026',
+    year: 2026,
+    coords: {x: 67, y: 45.2 },
+    category: ['Mountains', 'Adventure', 'Road Trips'],
+    overview: 'One of the most remote valleys in the Himalayas — dramatic gorges, monasteries clinging to cliffs, and near-total silence.',
+    itinerary: ['Day 1-2: Road to Padum via Pensi La', 'Day 3: Zangla & Karsha Monastery', 'Day 4: Phugtal Monastery trek approach'],
+    budget: '₹45,000 approx.',
+    route: 'Road trip from Kargil via Pensi La',
+    tips: ['Limited connectivity — inform people before you go off-grid', 'Carry extra fuel and supplies'],
+    photos: 16,
+  },
+]
+
+export const bucketList = [
+  { destination: 'Nepal — Everest Base Camp Trek', done: false },
+  { destination: 'Vietnam', done: false },
+  { destination: 'Japan (Cherry Blossom Season)', done: false },
+  { destination: 'Iceland', done: false },
+  { destination: 'Northeast India (Meghalaya & Arunachal)', done: false },
+  { destination: 'Andaman & Nicobar Islands', done: false },
+  { destination: 'Switzerland', done: false },
+]
+
+export const galleryCategories = ['All', 'Mountains', 'Cities', 'Nature', 'Architecture', 'Road Trips', 'Adventure', 'Sunsets']
+
+// Simple gradient placeholders used until real photos are added.
+export const galleryPhotos = [
+  { id: 1, category: 'Mountains', title: 'Ladakh Passes', gradient: 'from-blue-500 to-purple-600' },
+  { id: 2, category: 'Cities', title: 'Dubai Skyline', gradient: 'from-amber-400 to-pink-500' },
+  { id: 3, category: 'Nature', title: 'Kashmir Valleys', gradient: 'from-emerald-400 to-teal-600' },
+  { id: 4, category: 'Architecture', title: 'Taj Mahal, Agra', gradient: 'from-slate-300 to-slate-500' },
+  { id: 5, category: 'Road Trips', title: 'Spiti Highways', gradient: 'from-orange-400 to-red-500' },
+  { id: 6, category: 'Adventure', title: 'Zanskar Gorges', gradient: 'from-indigo-500 to-blue-700' },
+  { id: 7, category: 'Sunsets', title: 'Goa Beaches', gradient: 'from-pink-400 to-orange-500' },
+  { id: 8, category: 'Mountains', title: 'Bhutan Peaks', gradient: 'from-purple-500 to-indigo-700' },
+  { id: 9, category: 'Cities', title: 'Delhi Monuments', gradient: 'from-rose-400 to-amber-500' },
+  { id: 10, category: 'Nature', title: 'Pangong Lake', gradient: 'from-cyan-400 to-blue-600' },
+  { id: 11, category: 'Architecture', title: 'Punakha Dzong', gradient: 'from-yellow-400 to-orange-600' },
+  { id: 12, category: 'Adventure', title: 'Khardung La', gradient: 'from-violet-500 to-fuchsia-600' },
+]
+
+// ---------------------------------------------------------------------------
+// Blog
+// ---------------------------------------------------------------------------
+
+export const blogCategories = ['Java', 'Spring Boot', 'React', 'Linux', 'Apache', 'SQL', 'DevOps', 'Travel', 'Photography']
+
+export const blogPosts = [
+  {
+    id: 'migrating-tomcat-windows-to-linux',
+    title: 'Migrating Apache Tomcat from Windows to Linux: Lessons Learned',
+    category: 'DevOps',
+    date: '2025-03-12',
+    readTime: '7 min read',
+    excerpt: 'A practical walkthrough of moving a production Tomcat deployment from Windows Server to Linux — including the gotchas nobody warns you about.',
+  },
+  {
+    id: 'spring-boot-production-checklist',
+    title: 'My Spring Boot Production Readiness Checklist',
+    category: 'Spring Boot',
+    date: '2025-01-20',
+    readTime: '6 min read',
+    excerpt: 'Everything I check before a Spring Boot service goes live — from connection pools to health checks.',
+  },
+  {
+    id: 'oracle-sql-performance-tips',
+    title: '5 Oracle SQL Tuning Tricks That Actually Move the Needle',
+    category: 'SQL',
+    date: '2024-11-05',
+    readTime: '8 min read',
+    excerpt: 'Query tuning tips I picked up while working on high-throughput enterprise reporting systems.',
+  },
+  {
+    id: 'apache-httpd-reverse-proxy',
+    title: 'Configuring Apache HTTP Server as a Reverse Proxy for Tomcat',
+    category: 'Apache',
+    date: '2024-09-18',
+    readTime: '5 min read',
+    excerpt: 'A step-by-step guide to fronting Tomcat with Apache HTTPD for SSL termination and load distribution.',
+  },
+  {
+    id: 'linux-production-support-toolkit',
+    title: 'My Linux Toolkit for Production Support',
+    category: 'Linux',
+    date: '2024-07-02',
+    readTime: '6 min read',
+    excerpt: 'The commands and scripts I reach for first when something breaks in production.',
+  },
+  {
+    id: 'react-hooks-for-java-devs',
+    title: 'React Hooks Explained for Backend Java Developers',
+    category: 'React',
+    date: '2024-05-14',
+    readTime: '7 min read',
+    excerpt: 'Bridging the mental model gap between Spring beans and React hooks.',
+  },
+  {
+    id: 'ssl-ajp-to-https-migration',
+    title: 'Migrating from AJP to HTTPS: A Field Guide',
+    category: 'DevOps',
+    date: '2024-03-08',
+    readTime: '6 min read',
+    excerpt: 'Why we moved off AJP, how we implemented SSL, and what broke along the way.',
+  },
+  {
+    id: 'ladakh-road-trip-guide',
+    title: 'Planning a Ladakh Road Trip: Complete Guide',
+    category: 'Travel',
+    date: '2025-10-02',
+    readTime: '10 min read',
+    excerpt: 'Routes, altitude acclimatization, budget and packing list for a Ladakh road trip.',
+  },
+  {
+    id: 'mountain-photography-basics',
+    title: 'Mountain Photography Basics for Beginners',
+    category: 'Photography',
+    date: '2025-11-20',
+    readTime: '5 min read',
+    excerpt: 'Simple composition and gear tips that improved my mountain photography the most.',
+  },
+]
+
+export const jenkinsPipelineSnippet = `pipeline {
+  agent any
+  stages {
+    stage('Build')   { steps { sh 'mvn clean package' } }
+    stage('Test')    { steps { sh 'mvn test' } }
+    stage('Publish') { steps { sh 'jfrog rt upload target/*.war releases/' } }
+    stage('Deploy')  { steps { sh './deploy.sh production' } }
+  }
+}`
