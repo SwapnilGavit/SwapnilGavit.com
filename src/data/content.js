@@ -156,7 +156,7 @@ export const projects = [
     'REST API',
   ],
   category: ['Full Stack', 'Web Development'],
-  url: 'https://google.com', //C:/Users/swapn/Desktop/Project R26/files3/R26-Restaurant-Website/R26-Restaurant-Website/index.html
+  url: 'https://swapnilgavit.com/R26/',
   highlights: [
     'Designed and developed the complete resort and restaurant web application',
     'Responsive and mobile-friendly user interface',
