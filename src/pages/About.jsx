@@ -27,6 +27,43 @@ export default function About() {
                   className="w-full h-full object-cover"
                 />
               </div>
+  {/*########################################
+  <div className="relative w-28 h-28 mx-auto">
+  <div
+    className="
+      absolute
+      -inset-2
+      rounded-full
+      bg-gradient-to-r
+      from-brand-blue/40
+      via-brand-purple/60
+      to-brand-blue/40
+      blur-xl
+    "
+  />
+  <div
+  className="
+    absolute
+    -inset-1
+    rounded-full
+    bg-gradient-to-r
+    from-brand-blue
+    via-brand-purple
+    to-violet-500
+    animate-spin
+  "
+  style={{ animationDuration: '4s' }}
+/>
+  <div className="relative w-full h-full rounded-full bg-white p-1">
+    <img
+      src="/profile.jpg"
+      alt="Swapnil Gavit"
+      className="w-full h-full rounded-full object-cover"
+    />
+  </div>
+
+</div>
+   #########################################*/}
               <h2 className="mt-5 text-center font-display text-xl font-bold">{personal.name}</h2>
               <p className="text-center text-sm text-slate-500 dark:text-slate-400 mt-1">
                 {personal.titles.join(' · ')}

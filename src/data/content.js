@@ -5,7 +5,7 @@
 
 export const personal = {
   name: 'Swapnil Gavit',
-  titles: ['Full Stack Java Developer', 'DevOps Engineer', 'Linux Enthusiast'],
+  titles: ['Full Stack Java Developer', 'DevOps Engineer', 'Traveller'],
   typingRoles: [
     'Full Stack Java Developer',
     'Java Developer',
@@ -25,17 +25,18 @@ export const personal = {
 
 export const socials = {
   email: 'mailto:swapnilgavit19@gmail.com',
-  linkedin: 'https://www.linkedin.com/in/swapnil-gavit', // https://www.linkedin.com/in/swapnil-gavit
-  github: 'https://github.com/SwapnilGavit', // https://github.com/SwapnilGavit
-  twitter: 'https://x.com/swapnilgavit30', // https://x.com/swapnilgavit30
-  instagram: 'https://instagram.com/swapnil___gavit', // https://www.instagram.com/swapnil___gavit/
+  linkedin: 'https://www.linkedin.com/in/swapnil-gavit', 
+  github: 'https://github.com/SwapnilGavit', 
+  twitter: 'https://x.com/swapnilgavit30', 
+  instagram: 'https://instagram.com/swapnil___gavit',
+  facebook: 'https://www.facebook.com/swapnil.gavit.30' 
 }
 
 export const githubUsername = 'SwapnilGavit' // PLACEHOLDER — used by GitHub contributions widget
 
 export const about = {
   intro:
-    'I am a Full-Stack Java Developer with DevOps expertise and 3+ years of experience building enterprise-grade applications.',
+    'I am a Full-Stack Java Developer with DevOps expertise and 4+ years of experience building enterprise-grade applications.',
   body: [
     'Experienced across the complete SDLC including requirement analysis, impact analysis, development, deployment, CI/CD and production support.',
     'Strong expertise in Java, Spring Boot, React.js, Oracle SQL, Linux, Apache Tomcat, Apache HTTP Server, Jenkins, JFrog, Shell Scripting, SSL implementation and production support.',
@@ -294,7 +295,7 @@ export const certifications = [
     available: true,
   },
   {
-    title: 'Future Certification',
+    title: 'DevOps-certification',
     issuer: 'TBD',
     date: 'Upcoming',
     available: false,
