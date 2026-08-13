@@ -65,11 +65,36 @@ export default function TravelStoryModal({ destination, onClose }) {
               </ul>
             </div>
 
-            <div className="mt-6 grid grid-cols-4 gap-2">
+            {/* <div className="mt-6 grid grid-cols-4 gap-2">
               {Array.from({ length: Math.min(destination.photos, 8) }).map((_, i) => (
-                <div key={i} className="aspect-square rounded-lg bg-gradient-to-br from-brand-blue/40 to-brand-purple/40" />
+                // <div key={i} className="aspect-square rounded-lg bg-gradient-to-br from-brand-blue/40 to-brand-purple/40" />
+              <img
+                src={destination.tips}
+                alt={destination.id}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              ))}
+            </div> */}
+            
+            <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-2">
+              {destination.images?.map((image, i) => (
+                <div
+                  key={image}
+                  className="aspect-square rounded-lg overflow-hidden group"
+                >
+                  <img
+                    src={image}
+                    alt={`${destination.place} - ${i + 1}`}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
               ))}
             </div>
+
+<p className="mt-2 text-xs text-slate-500 dark:text-slate-500">
+  Photos from {destination.place}
+</p>
+
             <p className="mt-2 text-xs text-slate-500 dark:text-slate-500">Photo placeholders — add your real trip photos here.</p>
           </motion.div>
         </motion.div>
