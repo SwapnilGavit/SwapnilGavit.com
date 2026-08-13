@@ -1,4 +1,4 @@
-import { FiGithub, FiLinkedin, FiMail, FiTwitter, FiInstagram, FiArrowUp } from 'react-icons/fi'
+import { FiGithub, FiLinkedin, FiMail, FiTwitter, FiInstagram, FiArrowUp, FiFacebook, FiX } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
 import { socials } from '../data/content.js'
 
@@ -30,8 +30,9 @@ export default function Footer() {
             <a href={socials.email} aria-label="Email" className="p-2.5 rounded-full glass-card hover:scale-110 hover:text-brand-purple transition-all"><FiMail /></a>
             <a href={socials.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" className="p-2.5 rounded-full glass-card hover:scale-110 hover:text-brand-purple transition-all"><FiLinkedin /></a>
             <a href={socials.github} target="_blank" rel="noreferrer" aria-label="GitHub" className="p-2.5 rounded-full glass-card hover:scale-110 hover:text-brand-purple transition-all"><FiGithub /></a>
-            <a href={socials.twitter} target="_blank" rel="noreferrer" aria-label="Twitter" className="p-2.5 rounded-full glass-card hover:scale-110 hover:text-brand-purple transition-all"><FiTwitter /></a>
+            <a href={socials.twitter} target="_blank" rel="noreferrer" aria-label="Twitter" className="p-2.5 rounded-full glass-card hover:scale-110 hover:text-brand-purple transition-all"><FiX /></a>
             <a href={socials.instagram} target="_blank" rel="noreferrer" aria-label="Instagram" className="p-2.5 rounded-full glass-card hover:scale-110 hover:text-brand-purple transition-all"><FiInstagram /></a>
+            <a href={socials.facebook} target="_blank" rel="noreferrer" aria-label="Instagram" className="p-2.5 rounded-full glass-card hover:scale-110 hover:text-brand-purple transition-all"><FiFacebook /></a>
           </div>
         </div>
       </div>
