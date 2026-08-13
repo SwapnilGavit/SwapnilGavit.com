@@ -336,7 +336,7 @@ export const travelDestinations = [
     country: 'UAE',
     date: 'November 2022',
     year: 2022,
-    coords: { x: 61, y: 49 },
+      coords: { x: 61, y: 49 },
     category: ['Cities', 'Architecture'],
     overview:
       'A first international trip exploring the skyline, desert and the mix of ultra-modern architecture against the Arabian desert.',
@@ -482,18 +482,18 @@ export const galleryCategories = ['All', 'Mountains', 'Cities', 'Nature', 'Archi
 
 // Simple gradient placeholders used until real photos are added.
 export const galleryPhotos = [
-  { id: 1, category: 'Mountains', title: 'Ladakh Passes', gradient: 'from-blue-500 to-purple-600' },
-  { id: 2, category: 'Cities', title: 'Dubai Skyline', gradient: 'from-amber-400 to-pink-500' },
-  { id: 3, category: 'Nature', title: 'Kashmir Valleys', gradient: 'from-emerald-400 to-teal-600' },
-  { id: 4, category: 'Architecture', title: 'Taj Mahal, Agra', gradient: 'from-slate-300 to-slate-500' },
-  { id: 5, category: 'Road Trips', title: 'Spiti Highways', gradient: 'from-orange-400 to-red-500' },
-  { id: 6, category: 'Adventure', title: 'Zanskar Gorges', gradient: 'from-indigo-500 to-blue-700' },
-  { id: 7, category: 'Sunsets', title: 'Goa Beaches', gradient: 'from-pink-400 to-orange-500' },
-  { id: 8, category: 'Mountains', title: 'Bhutan Peaks', gradient: 'from-purple-500 to-indigo-700' },
-  { id: 9, category: 'Cities', title: 'Delhi Monuments', gradient: 'from-rose-400 to-amber-500' },
-  { id: 10, category: 'Nature', title: 'Pangong Lake', gradient: 'from-cyan-400 to-blue-600' },
-  { id: 11, category: 'Architecture', title: 'Punakha Dzong', gradient: 'from-yellow-400 to-orange-600' },
-  { id: 12, category: 'Adventure', title: 'Khardung La', gradient: 'from-violet-500 to-fuchsia-600' },
+  { id: 1, category: 'Mountains', title: 'Ladakh Passes', image: '/travel/image1.jpg' },
+  { id: 2, category: 'Cities', title: 'Dubai Skyline', image: '/travel/image2.jpg' },
+  { id: 3, category: 'Nature', title: 'Kashmir Valleys', image: '/travel/image3.jpg' },
+  { id: 4, category: 'Architecture', title: 'Taj Mahal, Agra', image: '/travel/image12.jpg' },
+  { id: 5, category: 'Road Trips', title: 'Spiti Highways', image: '/travel/image4.jpg' },
+  { id: 6, category: 'Adventure', title: 'Zanskar Gorges', image: '/travel/image5.jpg' },
+  { id: 7, category: 'Sunsets', title: 'Goa Beaches', image: '/travel/image6.jpg' },
+  { id: 8, category: 'Mountains', title: 'Bhutan Peaks', image: '/travel/image7.jpg' },
+  { id: 9, category: 'Cities', title: 'Delhi Monuments', image: '/travel/image8.jpg' },
+  { id: 10, category: 'Nature', title: 'Pangong Lake', image: '/travel/image9.jpg' },
+  { id: 11, category: 'Architecture', title: 'Punakha Dzong', image: '/travel/image10.jpg' },
+  { id: 12, category: 'Adventure', title: 'Khardung La', image: '/travel/image11.jpg' },
 ]
 
 // ---------------------------------------------------------------------------

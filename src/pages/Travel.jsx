@@ -130,7 +130,12 @@ export default function Travel() {
               transition={{ duration: 0.4, delay: i * 0.03 }}
               className={`break-inside-avoid rounded-2xl overflow-hidden relative group ${i % 3 === 0 ? 'aspect-[3/4]' : 'aspect-square'}`}
             >
-              <div className={`w-full h-full bg-gradient-to-br ${p.gradient}`} />
+              {/* <div className={`w-full h-full bg-gradient-to-br ${p.gradient}`} /> */}
+              <img
+                src={p.image}
+                alt={p.title}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors flex items-end p-3 opacity-0 group-hover:opacity-100">
                 <span className="text-white text-xs font-medium">{p.title}</span>
               </div>
