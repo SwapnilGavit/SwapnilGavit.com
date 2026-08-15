@@ -103,7 +103,7 @@ export default function Travel() {
           ))}
         </div>
 
-        {/* Gallery */}
+        {/* Gallery 
         <Reveal>
           <h2 className="font-display text-2xl font-bold mb-4">Travel Gallery</h2>
         </Reveal>
@@ -130,7 +130,6 @@ export default function Travel() {
               transition={{ duration: 0.4, delay: i * 0.03 }}
               className={`break-inside-avoid rounded-2xl overflow-hidden relative group ${i % 3 === 0 ? 'aspect-[3/4]' : 'aspect-square'}`}
             >
-              {/* <div className={`w-full h-full bg-gradient-to-br ${p.gradient}`} /> */}
               <img
                 src={p.image}
                 alt={p.title}
@@ -142,6 +141,7 @@ export default function Travel() {
             </motion.div>
           ))}
         </div>
+         */}
 
         {/* Bucket list */}
         <Reveal>

@@ -36,6 +36,19 @@ export default function Experience() {
                     </li>
                   ))}
                 </ul>
+\  
+                <div className="flex flex-wrap items-center gap-3 text-sm text-slate-500 dark:text-slate-400 mb-4">
+                  <span className="font-bold text-slate-700 dark:text-slate-200">
+                    Key Projects:
+                  </span>
+
+                  {job.projects.map((project) => (
+                    <span key={project} className="pill font-medium text-gradient ">
+                      {project}
+                    </span>
+                  ))}
+                </div>
+
                 <div className="flex flex-wrap gap-2">
                   {job.tags.map((t) => (
                     <span key={t} className="pill">{t}</span>
