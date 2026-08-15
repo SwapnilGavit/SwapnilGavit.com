@@ -4,16 +4,25 @@ import SEO from '../components/SEO.jsx'
 import Reveal from '../components/Reveal.jsx'
 import { galleryCategories, galleryPhotos } from '../data/content.js'
 
+
 export default function Gallery() {
   const [filter, setFilter] = useState('All')
 
-  const filtered = useMemo(
-    () =>
-      filter === 'All'
-        ? galleryPhotos
-        : galleryPhotos.filter((p) => p.category === filter),
-    [filter]
+  // const filtered = useMemo(
+  //   () =>
+  //     filter === 'All'
+  //       ? galleryPhotos
+  //       : galleryPhotos.filter((p) => p.category === filter),
+  //   [filter]
+  // )
+
+  const filtered = useMemo(() => {
+  if (filter === 'All') return galleryPhotos
+
+  return galleryPhotos.filter(
+    (photo) => photo.destination === filter
   )
+}, [filter])
 
   return (
     <>

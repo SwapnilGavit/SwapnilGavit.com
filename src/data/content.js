@@ -552,7 +552,6 @@ export const travelDestinations = [
       '/travel/goa-6.jpg',
       '/travel/goa-7.jpg',
       '/travel/goa-8.jpg',
-      '/travel/goa-9.jpg',
     ],
   },
   {
@@ -648,25 +647,48 @@ export const bucketList = [
   { destination: 'Switzerland', done: false },
 ]
 
-export const galleryCategories = ['All', 'Mountains', 'Cities', 'Nature', 'Architecture', 'Road Trips', 'Adventure', 'Sunsets']
+// export const galleryCategories = ['All', 'Mountains', 'Cities', 'Nature', 'Architecture', 'Road Trips', 'Adventure', 'Sunsets']
 
-// Simple gradient placeholders used until real photos are added.
-export const galleryPhotos = [
-  { id: 1, category: 'Mountains', title: 'Ladakh Passes', image: '/travel/image1.jpg' },
-  { id: 2, category: 'Cities', title: 'Dubai Skyline', image: '/travel/image2.jpg' },
-  { id: 3, category: 'Nature', title: 'Kashmir Valleys', image: '/travel/image3.jpg' },
-  { id: 4, category: 'Architecture', title: 'Taj Mahal, Agra', image: '/travel/image12.jpg' },
-  { id: 5, category: 'Road Trips', title: 'Spiti Highways', image: '/travel/image4.jpg' },
-  { id: 6, category: 'Adventure', title: 'Zanskar Gorges', image: '/travel/image5.jpg' },
-  { id: 7, category: 'Sunsets', title: 'Goa Beaches', image: '/travel/image6.jpg' },
-  { id: 8, category: 'Mountains', title: 'Bhutan Peaks', image: '/travel/image7.jpg' },
-  { id: 9, category: 'Cities', title: 'Delhi Monuments', image: '/travel/image8.jpg' },
-  { id: 10, category: 'Nature', title: 'Pangong Lake', image: '/travel/image9.jpg' },
-  { id: 11, category: 'Architecture', title: 'Punakha Dzong', image: '/travel/image10.jpg' },
-  { id: 12, category: 'Adventure', title: 'Khardung La', image: '/travel/image11.jpg' },
+// // Simple gradient placeholders used until real photos are added.
+// export const galleryPhotos = [
+//   { id: 1, category: 'Mountains', title: 'Ladakh Passes', image: '/travel/image1.jpg' },
+//   { id: 2, category: 'Cities', title: 'Dubai Skyline', image: '/travel/image2.jpg' },
+//   { id: 3, category: 'Nature', title: 'Kashmir Valleys', image: '/travel/image3.jpg' },
+//   { id: 4, category: 'Architecture', title: 'Taj Mahal, Agra', image: '/travel/image12.jpg' },
+//   { id: 5, category: 'Road Trips', title: 'Spiti Highways', image: '/travel/image4.jpg' },
+//   { id: 6, category: 'Adventure', title: 'Zanskar Gorges', image: '/travel/image5.jpg' },
+//   { id: 7, category: 'Sunsets', title: 'Goa Beaches', image: '/travel/image6.jpg' },
+//   { id: 8, category: 'Mountains', title: 'Bhutan Peaks', image: '/travel/image7.jpg' },
+//   { id: 9, category: 'Cities', title: 'Delhi Monuments', image: '/travel/image8.jpg' },
+//   { id: 10, category: 'Nature', title: 'Pangong Lake', image: '/travel/image9.jpg' },
+//   { id: 11, category: 'Architecture', title: 'Punakha Dzong', image: '/travel/image10.jpg' },
+//   { id: 12, category: 'Adventure', title: 'Khardung La', image: '/travel/image11.jpg' },
+// ]
+
+// ---------------------------------------------------------------------------
+// Travel Gallery
+// Automatically generated from travelDestinations.
+// travelDestinations is the single source of truth for travel photos.
+// ---------------------------------------------------------------------------
+
+export const galleryCategories = [
+  'All',
+  ...travelDestinations.map((destination) => destination.place),
 ]
 
-
+export const galleryPhotos = travelDestinations.flatMap((destination) =>
+  (destination.images || []).map((image, index) => ({
+    id: `${destination.id}-${index + 1}`,
+    image,
+    title: `${destination.place} - Photo ${index + 1}`,
+    destination: destination.place,
+    destinationId: destination.id,
+    country: destination.country,
+    date: destination.date,
+    year: destination.year,
+    category: destination.category,
+  }))
+)
 // ---------------------------------------------------------------------------
 // Blog
 // ---------------------------------------------------------------------------
