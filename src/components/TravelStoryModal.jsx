@@ -34,30 +34,46 @@ export default function TravelStoryModal({ destination, onClose }) {
             <div className="flex flex-wrap items-center gap-4 mt-2 text-sm text-slate-500 dark:text-slate-400">
               <span className="flex items-center gap-1.5"><FiMapPin /> {destination.country}</span>
               <span className="flex items-center gap-1.5"><FiCalendar /> {destination.date}</span>
-              <span className="flex items-center gap-1.5"><FiImage /> {destination.photos} photos</span>
+              <span className="flex items-center gap-1.5"><FiImage /> {destination.images?.length || 0} photos</span>
+
             </div>
 
             <p className="mt-5 text-slate-600 dark:text-slate-300 leading-relaxed">{destination.overview}</p>
 
-            <div className="grid sm:grid-cols-2 gap-6 mt-6">
+            <div className="mt-6">
+              {/* ##### Itinerary ##### */}
               <div>
-                <h3 className="font-display font-bold text-sm uppercase tracking-wide text-brand-purple mb-2">Itinerary</h3>
-                <ul className="space-y-1.5 text-sm text-slate-600 dark:text-slate-300">
-                  {destination.itinerary.map((it, i) => <li key={i}>• {it}</li>)}
-                </ul>
+                <h3 className="font-display font-bold text-sm uppercase tracking-wide text-brand-purple mb-3">Itinerary</h3>
+                <div className="grid gap-2">
+                  {destination.itinerary.map((it, i) => (
+                    <div key={i} className=" flex items-start gap-3 rounded-xl px-4 py-2 bg-gradient-to-r from-brand-purple/10 to-brand-blue/5 border border-brand-purple/20 hover:border-brand-purple/40 transition-all">
+                      <span className="text-[15px] leading-6 text-slate-600 dark:text-slate-300">
+                        {it.split(':').map((part, index) =>
+                          index === 0 ? (
+                            <span key={index} className="text-sm font-bold text-white text-slate-600 dark:text-slate-300">{part}:</span>
+                          ) : (<span key={index}> {part}</span>))}
+                      </span>
+                    </div>
+                  ))}
+                </div>
               </div>
-              <div className="space-y-4">
-                {/* <div>
-                  <h3 className="font-display font-bold text-sm uppercase tracking-wide text-brand-purple mb-2 flex items-center gap-1.5"><FiDollarSign /> Budget</h3>
-                  <p className="text-sm text-slate-600 dark:text-slate-300">{destination.budget}</p>
-                </div> */}
-                <div>
-                  <h3 className="font-display font-bold text-sm uppercase tracking-wide text-brand-purple mb-2 flex items-center gap-1.5"><FiNavigation /> Route</h3>
-                  <p className="text-sm text-slate-600 dark:text-slate-300">{destination.route}</p>
+
+            {/* ##### Route ##### */}
+              <div className="mt-7">
+                <h3 className="font-display font-bold text-sm uppercase tracking-wide text-brand-purple mb-3 flex items-center gap-2">
+                  <FiNavigation />Route</h3>
+                <div className="space-y-1.5">
+                  {destination.route?.map((route, i) => (
+                    <div
+                      key={i}
+                      className="flex items-start gap-2 text-[15px] leading-6 font-medium text-slate-600 dark:text-slate-300">
+                      <span className="text-brand-purple shrink-0">→</span>
+                      <span>{route}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
-
             <div className="mt-6">
               <h3 className="font-display font-bold text-sm uppercase tracking-wide text-brand-purple mb-2">Tips</h3>
               <ul className="space-y-1.5 text-sm text-slate-600 dark:text-slate-300">
@@ -65,17 +81,6 @@ export default function TravelStoryModal({ destination, onClose }) {
               </ul>
             </div>
 
-            {/* <div className="mt-6 grid grid-cols-4 gap-2">
-              {Array.from({ length: Math.min(destination.photos, 8) }).map((_, i) => (
-                // <div key={i} className="aspect-square rounded-lg bg-gradient-to-br from-brand-blue/40 to-brand-purple/40" />
-              <img
-                src={destination.tips}
-                alt={destination.id}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              ))}
-            </div> */}
-            
             <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-2">
               {destination.images?.map((image, i) => (
                 <div
@@ -85,15 +90,16 @@ export default function TravelStoryModal({ destination, onClose }) {
                   <img
                     src={image}
                     alt={`${destination.place} - ${i + 1}`}
+                    loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
               ))}
             </div>
 
-<p className="mt-2 text-xs text-slate-500 dark:text-slate-500">
-  Photos from {destination.place}
-</p>
+            <p className="mt-2 text-xs text-slate-500 dark:text-slate-500">
+              Photos from {destination.place}
+            </p>
 
             <p className="mt-2 text-xs text-slate-500 dark:text-slate-500">Photo placeholders — add your real trip photos here.</p>
           </motion.div>

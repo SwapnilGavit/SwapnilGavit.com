@@ -4,4 +4,4 @@ dist
 *.log
 .env
 .env.local
-public/travel/
+public/travel-images/

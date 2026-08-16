@@ -53,15 +53,16 @@ export default function DevOps() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8">
-          <Reveal>
-            <div className="glass-card rounded-2xl overflow-hidden">
+          <Reveal className="min-w-0">
+            <div className="glass-card min-w-0 max-w-full rounded-2xl overflow-hidden">
               <div className="px-5 py-3 border-b border-black/5 dark:border-white/10 flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400">
-                <span className="w-3 h-3 rounded-full bg-red-400" />
-                <span className="w-3 h-3 rounded-full bg-yellow-400" />
-                <span className="w-3 h-3 rounded-full bg-green-400" />
-                <span className="ml-2">Jenkinsfile</span>
+                <span className="w-3 h-3 shrink-0 rounded-full bg-red-400" />
+                <span className="w-3 h-3 shrink-0 rounded-full bg-yellow-400" />
+                <span className="w-3 h-3 shrink-0 rounded-full bg-green-400" />
+                <span className="ml-2 truncate">Jenkinsfile</span>
               </div>
-              <pre className="p-5 text-xs sm:text-sm overflow-x-auto leading-relaxed text-slate-700 dark:text-slate-300">
+
+              <pre className="max-w-full overflow-x-auto p-5 text-xs leading-relaxed text-slate-700 sm:text-sm dark:text-slate-300">
                 <code>{jenkinsPipelineSnippet}</code>
               </pre>
             </div>
