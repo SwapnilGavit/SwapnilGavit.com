@@ -551,7 +551,7 @@ export const travelDestinations = [
       '/travel/goa-5.jpg',
       '/travel/goa-6.jpg',
       '/travel/goa-7.jpg',
-      '/travel/goa-8.jpg',
+      '/travel/goa-8.jpg',  
     ],
   },
   {
@@ -633,6 +633,7 @@ export const travelDestinations = [
       '/travel/zanskar-19.jpg',
       '/travel/zanskar-20.jpg',
       '/travel/zanskar-21.jpg',
+      '/travel/zanskar-22.jpg',
     ],
   },
 ]
