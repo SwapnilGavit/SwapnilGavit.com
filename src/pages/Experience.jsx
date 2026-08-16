@@ -36,7 +36,6 @@ export default function Experience() {
                     </li>
                   ))}
                 </ul>
-\  
                 <div className="flex flex-wrap items-center gap-3 text-sm text-slate-500 dark:text-slate-400 mb-4">
                   <span className="font-bold text-slate-700 dark:text-slate-200">
                     Key Projects:
