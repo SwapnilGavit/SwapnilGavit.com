@@ -1,28 +1,29 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { motion } from 'framer-motion'
 import SEO from '../components/SEO.jsx'
 import Reveal from '../components/Reveal.jsx'
 import { galleryCategories, galleryPhotos } from '../data/content.js'
 
+const PHOTOS_PER_PAGE = 24
 
 export default function Gallery() {
   const [filter, setFilter] = useState('All')
-
-  // const filtered = useMemo(
-  //   () =>
-  //     filter === 'All'
-  //       ? galleryPhotos
-  //       : galleryPhotos.filter((p) => p.category === filter),
-  //   [filter]
-  // )
+  const [visibleCount, setVisibleCount] = useState(PHOTOS_PER_PAGE)
 
   const filtered = useMemo(() => {
-  if (filter === 'All') return galleryPhotos
+    if (filter === 'All') return galleryPhotos
 
-  return galleryPhotos.filter(
-    (photo) => photo.destination === filter
-  )
-}, [filter])
+    return galleryPhotos.filter(
+      (photo) => photo.destination === filter
+    )
+  }, [filter])
+
+  useEffect(() => {
+    setVisibleCount(PHOTOS_PER_PAGE)
+  }, [filter])
+
+  const visiblePhotos = filtered.slice(0, visibleCount)
+  const hasMorePhotos = visibleCount < filtered.length
 
   return (
     <>
@@ -49,7 +50,10 @@ export default function Gallery() {
           {galleryCategories.map((c) => (
             <button
               key={c}
-              onClick={() => setFilter(c)}
+              onClick={() => {
+                setFilter(c)
+                setVisibleCount(PHOTOS_PER_PAGE)
+              }}
               className={`px-3.5 py-1.5 rounded-full text-xs font-medium transition-all ${filter === c
                   ? 'bg-grad-primary text-white shadow-glow'
                   : 'glass-card hover:border-brand-purple/50'
@@ -62,7 +66,7 @@ export default function Gallery() {
 
         {/* Gallery */}
         <div className="columns-2 sm:columns-3 lg:columns-4 gap-4 space-y-4">
-          {filtered.map((p, i) => (
+          {visiblePhotos.map((p, i) => (
             <motion.div
               key={p.id}
               initial={{ opacity: 0, y: 16 }}
@@ -77,11 +81,12 @@ export default function Gallery() {
                   : 'aspect-square'
                 }`}
             >
-              {/* Actual Photo */}
               <img
                 src={p.image}
-                alt={p.title}
-                loading="lazy"
+                alt={`${p.destination} - Photo ${i + 1}`}
+                loading={i < 4 ? 'eager' : 'lazy'}
+                fetchPriority={i < 2 ? 'high' : 'auto'}
+                decoding="async"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
 
@@ -100,6 +105,20 @@ export default function Gallery() {
             </motion.div>
           ))}
         </div>
+
+        {hasMorePhotos && (
+          <div className="flex justify-center mt-8">
+            <button
+              type="button"
+              onClick={() =>
+                setVisibleCount((current) => current + PHOTOS_PER_PAGE)
+              }
+              className="px-5 py-2.5 rounded-full bg-grad-primary text-sm font-medium text-white shadow-glow transition-transform hover:scale-105"
+            >
+              Load more photos
+            </button>
+          </div>
+        )}
 
         {/* Empty State */}
         {filtered.length === 0 && (
