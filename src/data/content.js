@@ -56,27 +56,32 @@ export const skillCategories = [
   {
     title: 'Programming Languages',
     icon: 'code',
-    skills: ['Java', 'JavaScript', 'Python', 'SQL', 'PL/SQL'],
+    skills: [
+      'Java',
+      'JavaScript',
+      'Python',
+      'SQL',
+      'PL/SQL',
+    ],
   },
   {
     title: 'Frameworks & Libraries',
     icon: 'layers',
-    skills: ['Spring', 'Spring Boot', 'JSP/Servlet', 'React.js', 'JUnit'],
+    skills: [
+      'Spring',
+      'Spring Boot',
+      'JSP/Servlet',
+      'React.js',
+      'JUnit',
+    ],
   },
   {
     title: 'Databases',
     icon: 'database',
-    skills: ['Oracle', 'MySQL'],
-  },
-  {
-    title: 'DevOps & Tooling',
-    icon: 'devops',
-    skills: ['Git', 'GitHub', 'Jenkins', 'JFrog Artifactory', 'CI/CD', 'Shell Scripting'],
-  },
-  {
-    title: 'Servers & OS',
-    icon: 'server',
-    skills: ['Apache Tomcat', 'Apache HTTP Server', 'Linux'],
+    skills: [
+      'Oracle',
+      'MySQL',
+    ],
   },
 ]
 
@@ -190,6 +195,12 @@ export const devops = [
     description: 'Reverse proxy, virtual host and load-balancing configuration with Apache HTTPD.',
     icon: 'apache',
   },
+  {
+  title: 'AWS',
+  icon: 'aws',
+  description:
+    'Hands-on learning and practical experience with AWS cloud infrastructure, EC2 instances, networking, server configuration and application hosting.',
+},
   {
     title: 'Jenkins',
     description: 'Building and maintaining CI/CD pipelines for automated build, test and deployment.',

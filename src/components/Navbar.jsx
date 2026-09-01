@@ -8,10 +8,8 @@ import { personal } from '../data/content.js'
 const links = [
   { to: '/', label: 'Home' },
   { to: '/about', label: 'About' },
-  { to: '/experience', label: 'Experience' },
   { to: '/projects', label: 'Projects' },
   { to: '/skills', label: 'Skills' },
-  { to: '/devops', label: 'DevOps' },
   { to: '/education', label: 'Education' },
   { to: '/travel', label: 'Travel' },
   { to: '/gallery', label: 'Gallery' },
