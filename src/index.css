@@ -72,3 +72,49 @@ body {
   z-index: 9999;
   mix-blend-mode: difference;
 }
+
+/* Travel map location marker */
+.travel-location-marker {
+  background: transparent !important;
+  border: none !important;
+}
+
+.travel-pin-wrapper {
+  width: 32px;
+  height: 42px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.travel-pin-wrapper:hover {
+  transform: translateY(-3px) scale(1.08);
+}
+
+.travel-pin {
+  width: 32px;
+  height: 42px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  filter: drop-shadow(0 4px 5px rgba(0, 0, 0, 0.35));
+}
+
+.travel-pin svg {
+  width: 32px;
+  height: 42px;
+}
+/* Keep Leaflet map below application modals */
+.leaflet-container {
+  z-index: 0 !important;
+}
+
+.leaflet-pane {
+  z-index: 1 !important;
+}
+
+.leaflet-control-container {
+  z-index: 10 !important;
+}

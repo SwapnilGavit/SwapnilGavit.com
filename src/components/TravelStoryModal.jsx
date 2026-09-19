@@ -9,7 +9,7 @@ export default function TravelStoryModal({ destination, onClose }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 z-[90] flex items-end sm:items-center justify-center p-0 sm:p-6 bg-black/60 backdrop-blur-sm"
+          className="fixed inset-0 z-[9999] flex items-end sm:items-center justify-center p-0 sm:p-6 bg-black/60 backdrop-blur-sm"
           onClick={onClose}
         >
           <motion.div
@@ -18,12 +18,12 @@ export default function TravelStoryModal({ destination, onClose }) {
             exit={{ opacity: 0, y: 40 }}
             transition={{ duration: 0.3 }}
             onClick={(e) => e.stopPropagation()}
-            className="glass-card w-full sm:max-w-2xl max-h-[85vh] overflow-y-auto rounded-t-3xl sm:rounded-3xl p-6 sm:p-8 relative"
+            className="w-full sm:max-w-2xl max-h-[85vh] overflow-y-auto rounded-t-3xl sm:rounded-3xl border border-slate-200 bg-white text-slate-900 shadow-2xl p-6 sm:p-8 relative dark:border-white/10 dark:bg-slate-900 dark:text-slate-100"
           >
             <button
               onClick={onClose}
               aria-label="Close"
-              className="absolute top-4 right-4 p-2 rounded-full glass-card hover:scale-105 transition-transform"
+              className="absolute top-4 right-4 rounded-full border border-slate-200 bg-white p-2 text-slate-700 shadow-sm transition-transform hover:scale-105 dark:border-white/10 dark:bg-slate-800 dark:text-slate-200"
             >
               <FiX />
             </button>
@@ -50,7 +50,7 @@ export default function TravelStoryModal({ destination, onClose }) {
                       <span className="text-[15px] leading-6 text-slate-600 dark:text-slate-300">
                         {it.split(':').map((part, index) =>
                           index === 0 ? (
-                            <span key={index} className="text-sm font-bold text-white text-slate-600 dark:text-slate-300">{part}:</span>
+                            <span key={index} className="text-sm font-bold text-slate-800 dark:text-white">{part}:</span>
                           ) : (<span key={index}> {part}</span>))}
                       </span>
                     </div>

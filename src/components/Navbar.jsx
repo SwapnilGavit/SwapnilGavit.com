@@ -40,7 +40,13 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
-        <div className="glass-card flex items-center justify-between px-4 sm:px-6 py-3 rounded-2xl">
+        <div
+          className={`flex items-center justify-between px-4 sm:px-6 py-3 rounded-2xl transition-colors duration-300 ${
+            scrolled
+              ? 'border border-slate-200/80 bg-white/95 shadow-xl shadow-slate-900/10 backdrop-blur-xl dark:border-white/10 dark:bg-slate-950/95 dark:shadow-black/50'
+              : 'glass-card'
+          }`}
+        >
           <NavLink to="/" className="font-display text-lg font-bold tracking-tight">
             <span className="gradient-text">Swapnil Gavit</span>
           </NavLink>
